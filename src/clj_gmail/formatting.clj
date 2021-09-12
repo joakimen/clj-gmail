@@ -10,11 +10,14 @@
    (java.text.SimpleDateFormat. "yyyy/MM/dd hh:mm")
    (message/date-received msg)))
 
+(defn subject [msg]
+  (or (message/subject msg) "(no subject)"))
+
 (defn pprint-fmt [msg]
   (format "[%s] <%s> %s"
           (received-date msg)
           (sender msg)
-          (message/subject msg)))
+          (subject msg)))
 
 (defn pprint [msg]
   (println (pprint-fmt msg)))

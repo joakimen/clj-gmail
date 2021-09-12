@@ -1,10 +1,10 @@
 (ns clj-gmail.core
+  (:require [clj-gmail.gmail :as gmail])
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (gmail/read-inbox))
 
 
 (comment
