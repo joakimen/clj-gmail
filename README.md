@@ -1,6 +1,9 @@
 # clj-gmail
 
+ 
 Check your Gmail-inbox with Clojure.
+
+![build-badge](https://github.com/joakimen/clj-gmail/actions/workflows/clojure.yml/badge.svg)
 
 ## Usage
 
